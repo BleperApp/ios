@@ -1,0 +1,43 @@
+PODS:
+  - Fabric (1.6.9)
+  - GoogleMaps (1.13.2)
+  - konashi-ios-sdk (4.1.0)
+  - NCMB (2.3.3)
+  - NMPopUpViewSwift (3.0.1)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - TwitterCore (2.3.0):
+    - Fabric
+  - TwitterKit (2.3.0):
+    - TwitterCore (= 2.3.0)
+
+DEPENDENCIES:
+  - Fabric (~> 1.6)
+  - GoogleMaps (~> 1.13)
+  - konashi-ios-sdk
+  - NCMB (from `https://github.com/NIFTYCloud-mbaas/ncmb_ios.git`)
+  - NMPopUpViewSwift (~> 3.0)
+  - SDWebImage (~> 3.8)
+  - TwitterKit (= 2.3.0)
+
+EXTERNAL SOURCES:
+  NCMB:
+    :git: https://github.com/NIFTYCloud-mbaas/ncmb_ios.git
+
+CHECKOUT OPTIONS:
+  NCMB:
+    :commit: cc06a5deb3636533dd7560087beac180c2d62012
+    :git: https://github.com/NIFTYCloud-mbaas/ncmb_ios.git
+
+SPEC CHECKSUMS:
+  Fabric: bc5bec42cef4bcf1ee3ce0e218fc518e4b44dfbb
+  GoogleMaps: b20a103ff307f58392e603cf142e59d7e30374c1
+  konashi-ios-sdk: dd545f091380e8adf58114bf270f24f79d8b96cc
+  NCMB: 33829337aeb2e91a0fc1c771eeb77b642f7f6589
+  NMPopUpViewSwift: 23a44d6db17a9abc6b806f9fac597be6d7e9f300
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  TwitterCore: 817eae3e291fa4125b47789e26a4f6f024115c1f
+  TwitterKit: 8a383da8d9c21b0423716381ea8bbfce20622d91
+
+COCOAPODS: 0.39.0

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PopUpViewController">
+            <connections>
+                <outlet property="logoImg" destination="gmN-gy-bjy" id="QgK-YD-PTP"/>
+                <outlet property="messageLabel" destination="zzP-bh-DHM" id="Vcd-7j-vWE"/>
+                <outlet property="popUpView" destination="cYT-D9-Z5J" id="idF-M2-Ksa"/>
+                <outlet property="view" destination="1" id="b8x-g2-m73"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cYT-D9-Z5J">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ani_cheers.gif" translatesAutoresizingMaskIntoConstraints="NO" id="gmN-gy-bjy">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="389" id="Y9s-pZ-2pq"/>
+                            </constraints>
+                        </imageView>
+                        <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="243" translatesAutoresizingMaskIntoConstraints="NO" id="zzP-bh-DHM">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="110" id="Mt1-dk-5S5"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="gmN-gy-bjy" firstAttribute="top" secondItem="cYT-D9-Z5J" secondAttribute="top" id="15k-fz-2Be"/>
+                        <constraint firstItem="gmN-gy-bjy" firstAttribute="centerY" secondItem="cYT-D9-Z5J" secondAttribute="centerY" id="9Qm-xj-gOd"/>
+                        <constraint firstAttribute="trailing" secondItem="gmN-gy-bjy" secondAttribute="trailing" id="NG6-Tf-1ix"/>
+                        <constraint firstAttribute="width" constant="389" id="cS1-DE-6e9"/>
+                        <constraint firstItem="zzP-bh-DHM" firstAttribute="centerY" secondItem="cYT-D9-Z5J" secondAttribute="centerY" id="fPy-Ae-VV0"/>
+                        <constraint firstItem="zzP-bh-DHM" firstAttribute="leading" secondItem="cYT-D9-Z5J" secondAttribute="leading" constant="60" id="k0E-8Q-Gka"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ple-bp-UYe">
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="331-sJ-ocz"/>
+                        <constraint firstAttribute="width" constant="166" id="psK-Xs-V1a"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="Close">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="closePopup:" destination="-1" eventType="touchUpInside" id="ROG-kC-NZA"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="cYT-D9-Z5J" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="190" id="9Qc-no-a68"/>
+                <constraint firstItem="cYT-D9-Z5J" firstAttribute="top" secondItem="1" secondAttribute="top" constant="287" id="G8y-og-M0V"/>
+                <constraint firstAttribute="bottom" secondItem="Ple-bp-UYe" secondAttribute="bottom" constant="315" id="M1F-az-Pfw"/>
+                <constraint firstAttribute="trailing" secondItem="Ple-bp-UYe" secondAttribute="trailing" constant="300" id="SPQ-4A-8vG"/>
+                <constraint firstItem="zzP-bh-DHM" firstAttribute="centerX" secondItem="Ple-bp-UYe" secondAttribute="centerX" id="Yon-hf-csK"/>
+                <constraint firstItem="cYT-D9-Z5J" firstAttribute="centerY" secondItem="1" secondAttribute="centerY" id="bsG-Dy-rYl"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ani_cheers.gif" width="720" height="1280"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
